@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — Alaeto Isaac</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <meta name="description" content="Technical skills and tools: HTML, CSS, JavaScript, Node.js, Git.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="Home.html">Alaeto Isaac</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button id="menuToggle" class="icon-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Skills</h1>
+    <p class="muted">Technologies I use and what I'm learning next.</p>
+
+    <div class="skills-grid">
+      <div class="skill"><h4>HTML & CSS</h4><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+      <div class="skill"><h4>JavaScript</h4><div class="bar"><div class="bar-fill" style="width:70%"></div></div></div>
+      <div class="skill"><h4>Node.js</h4><div class="bar"><div class="bar-fill" style="width:40%"></div></div></div>
+      <div class="skill"><h4>Git & CLI</h4><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+    </div>
+
+    <h3 style="margin-top:1.25rem;">Learning roadmap</h3>
+    <ul>
+      <li>React fundamentals — components, hooks, state</li>
+      <li>REST APIs with Node & Express</li>
+      <li>Deployments (Vercel/Netlify) and basic CI</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> Alaeto Isaac</p></div>
+  </footer>
+
+  <script src="home.js" defer></script>
+</body>
+</html>

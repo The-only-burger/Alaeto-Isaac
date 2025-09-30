@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alaeto Isaac — Software Engineer</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="home.css">
+
+  <meta name="description" content="Alaeto Isaac — Software engineering student building web apps. Portfolio showcasing projects, skills, and contact.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Alaeto Isaac</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="menuToggle" class="icon-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Alaeto Isaac</span></h1>
+          <p class="lead">A software engineering student building thoughtful web experiences.</p>
+          <p class="typing">
+            <span id="typing"></span><span class="cursor">|</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">See my projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Hero card now includes a profile image area -->
+        <div class="hero-card">
+          <div class="card-inner">
+            <!-- Replace the src with your image file (e.g. assets/profile.jpg) -->
+            <div class="profile-wrap">
+              <img id="profileImage" src="assets/isaac.jpg" alt="Alaeto Isaac" />
+            </div>
+
+            <h3>Quick facts</h3>
+            <ul>
+              <li>Role: Software engineering student</li>
+              <li>Looking for internships & small freelance gigs</li>
+              <li>Stack: HTML, CSS, JS, Node (learning React)</li>
+            </ul>
+            <a class="download-cv" href="#" onclick="alert('assets/isaac.pdf'); return false;">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a software engineering student building web apps and improving my skills every day.
+            I enjoy solving problems, learning new technologies, and building projects that I can
+            show to potential employers or collaborators.
+          </p>
+          <p>
+            Currently learning advanced JavaScript patterns, React and backend fundamentals.
+            I work on small projects daily to grow my portfolio and experience.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Personal projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Small freelance tasks</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">Learning</div>
+            <div class="stat-label">React & Node</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-type="frontend" data-title="Portfolio Template">
+          <div class="project-thumb" aria-hidden="true">PT</div>
+          <div class="project-body">
+            <h3 class="project-title">Portfolio Template</h3>
+            <p class="project-excerpt">A clean, responsive portfolio template built with vanilla HTML, CSS and JS.</p>
+            <div class="project-actions">
+              <button class="btn small details-btn">Details</button>
+              <a class="btn small ghost" href="#" onclick="alert('Open project link'); return false;">Open</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="fullstack" data-title="STRING">
+          <div class="project-thumb" aria-hidden="true">ST</div>
+          <div class="project-body">
+            <h3 class="project-title">STRING</h3>
+            <p class="project-excerpt">Simple fullstack app with Node.js backend and local persistence (Service Provider Project).</p>
+            <div class="project-actions">
+              <button class="btn small details-btn">Details</button>
+              <a class="btn small ghost" href="#" onclick="alert('Open project link'); return false;">Open</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="design" data-title="REFILL">
+          <div class="project-thumb" aria-hidden="true">RE</div>
+          <div class="project-body">
+            <h3 class="project-title">REFILL</h3>
+            <p class="project-excerpt">A design concept for a gas refill company — mockups and interactions in Figma.</p>
+            <div class="project-actions">
+              <button class="btn small details-btn">Details</button>
+              <a class="btn small ghost" href="#" onclick="alert('Open project link'); return false;">Open</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><div class="bar-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="bar"><div class="bar-fill" style="width: 70%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Node.js</h4>
+          <div class="bar"><div class="bar-fill" style="width: 40%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Git & CLI</h4>
+          <div class="bar"><div class="bar-fill" style="width: 60%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" method="POST" action="contact_submit.php" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" required rows="5" placeholder="Say hi — or describe a project idea"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Let's connect</h3>
+          <p>I'm open to internships or freelance work. Prefer email or LinkedIn.</p>
+          <ul>
+            <li>Email: <a href="mailto:alaetoisaac@gmail.com">alaetoisaac@gmail.com</a></li>
+            <li>Location: Nigeria</li>
+            <li>Whatsapp: 09165129272</li>
+            <li>LinkedIn: <a href="#" onclick="alert('https://www.linkedin.com/in/isaac-alaeto/'); return false;">Add profile</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alaeto Isaac</p>
+    </div>
+  </footer>
+
+  <!-- Project detail modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-content">
+        <h3 id="modalTitle">Project title</h3>
+        <p id="modalDesc">Project details go here.</p>
+        <div id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="home.js" defer></script>
+</body>
+</html>
